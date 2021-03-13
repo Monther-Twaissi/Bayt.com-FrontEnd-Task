@@ -1,0 +1,440 @@
+:root {
+  --primaryColor: #009688;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Mobile Header Style */
+.mobileContainer {
+  display: none;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  height: fit-content;
+  color: white;
+  border-radius: 10px;
+}
+
+.topNav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.topNav #myLinks {
+  display: none;
+}
+
+.topNav a {
+  color: white;
+  padding: 5px 10px;
+
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topNav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: var(--primaryColor);
+  color: white;
+  width: 7rem;
+}
+
+/* End Mobile Header Style */
+
+/* Main header styles */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navList {
+  display: flex;
+  grid-gap: 1rem;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+}
+.navItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.navItem > i {
+  padding: 0rem 1rem 0 0;
+}
+
+.navItem.home {
+  background-color: var(--primaryColor);
+  padding: 0.5rem 1rem;
+}
+.navSelect {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+}
+#work:hover {
+  cursor: pointer;
+}
+#contact:hover {
+  cursor: pointer;
+}
+.header > .searchSection {
+  display: flex;
+  flex-grow: 1;
+  padding: 0.5rem 0.5rem;
+  background-color: black;
+  outline: 0;
+}
+.search {
+  flex-grow: 1;
+  border: none;
+  color: white;
+  /* padding: 0.5rem 0.5rem; */
+  background-color: black;
+  outline: 0;
+}
+/*End Main header styles */
+/* Content Container styles */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.bgCoverCont {
+  position: relative;
+}
+.bgCover {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 5rem;
+}
+.bgText {
+  color: white;
+  background-color: black;
+  padding: 0.7rem;
+  font-size: 25px;
+  position: absolute;
+  bottom: 22%;
+  left: 1rem;
+}
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.headerText {
+  margin-bottom: 1rem;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  grid-gap: 5rem;
+  margin-bottom: 3rem;
+}
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardImage {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.tayseer {
+  width: 16.5rem;
+}
+.cardHeader {
+  margin-bottom: 1rem;
+}
+.workContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 1rem;
+  background-color: rgb(63, 58, 58);
+  color: white;
+}
+.workBrief {
+  margin-right: 1rem;
+}
+.workHeader {
+  margin-bottom: 1rem;
+}
+.workText {
+  width: 30vw;
+}
+.customerCardsCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+}
+.customerCard {
+  background-color: white;
+  color: black;
+}
+.customerImage {
+  width: 21vw;
+  margin-bottom: 1rem;
+}
+.customerHeader {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.customerText {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.customerList {
+  list-style-type: none;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.customerItem {
+  margin-bottom: 1rem;
+}
+.contactSection {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 3rem 0.5rem;
+}
+.contactHeader {
+  margin-bottom: 1rem;
+  border-bottom: 5px solid var(--primaryColor);
+  width: 7rem;
+}
+.contactInfo {
+  padding-left: 1rem;
+}
+.adressText {
+  margin-bottom: 1rem;
+}
+.addressList {
+  list-style-type: none;
+}
+.addressItem {
+  padding: 0.5rem 0;
+}
+.contactFormContainer {
+  width: 60%;
+  background-color: white;
+}
+.contactIcon {
+  color: var(--primaryColor);
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 17px 1px gray;
+  padding: 0 0.7rem;
+}
+.contactInput {
+  outline: 0;
+  border: 0;
+  border-width: 0;
+  text-indent: 1rem;
+  border-bottom: 1px solid lightgray;
+  padding: 2rem 0;
+}
+.submitSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.submit {
+  padding: 0.4rem 0.7rem;
+  background-color: black;
+  color: white;
+}
+/* End Content Container styles */
+
+/*  Footer styles */
+.footerContainer {
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.footerHeader {
+  margin-bottom: 1rem;
+}
+.footerLinks {
+  display: flex;
+  grid-gap: 0.5rem;
+  list-style-type: none;
+}
+.footerItem {
+  background-color: var(--primaryColor);
+  padding: 0.5rem;
+}
+a > i {
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+.scroll {
+  padding: 1rem;
+  background-color: black;
+  font-size: 20px;
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+}
+.scroll:hover {
+  cursor: pointer;
+}
+.plus {
+  position: absolute;
+  top: -2.1rem;
+  right: 1.5rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: var(--primaryColor);
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+/*  Footer styles */
+
+/* Mobile and tablet adaptive styles */
+@media only screen and (max-width: 540px) {
+  .mobileContainer {
+    display: block;
+  }
+  .bgCover {
+    height: 30vh;
+  }
+  .header {
+    display: none;
+  }
+  .cardContainer {
+    width: 100%;
+  }
+  .workContainer {
+    width: auto;
+  }
+  .workText {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .customerCardsCont {
+    flex-direction: column;
+    width: 100%;
+  }
+  .customerImage {
+    width: 100%;
+  }
+  .bgText {
+    bottom: 35%;
+  }
+  .workBrief {
+    margin-right: 0;
+  }
+  .contactSection {
+    flex-direction: column;
+  }
+  .contactInfo {
+    padding-left: 2px;
+  }
+
+  .contactFormContainer {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  .contactForm {
+    padding: 0 1rem;
+  }
+  .contactInput {
+    padding: 1rem 5px;
+  }
+  .submitSection {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 1025px) {
+  .mobileContainer {
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+  .workContainer {
+    justify-content: center;
+  }
+  .workHeader {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .workText {
+    width: 80vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  .customerCardsCont {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .customerCard {
+    width: 100%;
+  }
+  .customerImage {
+    width: 100%;
+  }
+  .contactSection {
+    flex-direction: column;
+    font-size: 2rem;
+    width: 97.8%;
+  }
+  .contactHeader {
+    width: 13rem;
+  }
+  .contactFormContainer {
+    width: 85%;
+    margin: 2rem 3rem;
+  }
+  .contactInput {
+    font-size: 2rem;
+  }
+  .submit {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
